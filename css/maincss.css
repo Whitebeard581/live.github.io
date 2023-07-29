@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background: lightgrey;
+}
+.wrapper{
+    width: 1176px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    background: black;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    color: white;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+nav a.current{
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(192, 192, 192, 0.3);
+}
+nav a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: white;
+}
+.banner-area{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 50px;
+    background-image: url(../Images/Night_Sky_Half.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.banner-area h2{
+    padding-top: 9%;
+    font-size: 100px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: white;
+}
+.content-area{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: lightgray;
+    height: 1500px;
+}
+.content-area2{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: lightgray;
+    height: 2300px;
+}
+.content-area3{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: lightgray;
+    height: 900px;
+}
+.subcontent-area{
+    width: 110%;
+    margin-left: -60px;
+    margin-right: auto;
+    padding-bottom: 16px;
+    background: white;
+    height: 1500px;
+}
+.subcontent-area2{
+    width: 110%;
+    margin-left: -60px;
+    margin-right: auto;
+    padding-bottom: 16px;
+    background: white;
+    height: 2300px;
+}
+.subcontent-area_form{
+    width: 80%;
+    margin-right: auto;
+    margin-left: 115px;
+    padding-bottom: 16px;
+    background: white;
+    height:700px;
+}
+.content-area h2{
+    font-family: Arial;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+.content-area2 h2{
+    font-family: Arial;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+.content-area3 h2{
+    font-family: Arial;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+.content-area p{
+    padding: 2%;
+    font-family: merienda;
+    line-height: 30px;
+}
+.content-area2 p{
+    padding: 2%;
+    font-family: merienda;
+    line-height: 30px;
+}
+.content-area3 p{
+    padding: 2%;
+    font-family: merienda;
+    line-height: 30px;
+}
+#main-title{
+    font-family: Arial black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.columns{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.tables{
+    padding-top: 70px;
+    content: "";
+    display: table;
+    clear: both;
+}
+#tabletitles{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+#biography{
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+    font-size: 20px;
+}
+#biography2{
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: bold;
+    color: silver;
+    font-size: 20px;
+}
+#biography3{
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: bold;
+    color: orangered;
+    font-size: 20px;
+}
+#recommendationdump{
+    font-family: 'Times New Roman';
+    font-size: 16px;
+}
+#captionstyle{
+    padding-top: 60px;
+}
+.divider{
+    position: relative;
+    top: 20%;
+    border-top: 3px solid black;
+}
+.divider2{
+    position: relative;
+    bottom: 94.3%;
+    border-top: 3px solid black;
+}
+.divider3{
+    position: relative;
+    top: 49.3%;
+    border-top: 3px solid black;
+}
+.divider4{
+    position: relative;
+    top: 25.7%;
+    border-top: 3px solid black;
+}
+.divider5{
+    position: relative;
+    top: 15%;
+    border-top: 3px solid black;
+}
+.divider6{
+    position: relative;
+    top: 17.05%;
+    border-top: 3px solid black;
+}
+.divider7{
+    position: relative;
+    top: 56.05%;
+    border-top: 3px solid black;
+}
+#copyrightedname{
+    position: relative;
+    font-size: 20px;
+}
+.containerdecorations{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    top: 20.3%;
+    width: 20.3%;
+    height: 2.5%;
+}
+.containerdecorations2{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    bottom: 94.05%;
+    width: 20.3%;
+    height: 2.5%;
+}
+.containerdecorations3{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    top: 49.6%;
+    width: 20.3%;
+    height: 2.5%;
+}
+.containerdecorations4{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    top: 26%;
+    width: 20.3%;
+    height: 2.5%;
+}
+.containerdecorations5{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    top: 15.2%;
+    width: 20.3%;
+    height: 1.6%;
+}
+.containerdecorations6{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    top: 17.4%;
+    width: 20.3%;
+    height: 2.5%;
+}
+.containerdecorations7{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    top: 56.4%;
+    width: 20.3%;
+    height: 2.4%;
+}
+.idcontainer{
+    width: 79%;
+    position: relative;
+    left:20%;
+    height: 500px;
+}
+.idcontainer2{
+    width: 75%;
+    position: relative;
+    left:35px;
+    height: 420px;
+}
+.idcontainer3{
+    width: 75%;
+    position: relative;
+    left:23%;
+    height: 350px;
+}
+.linksdecoration{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+#piccontainer1{
+    width: 200px;
+    height: 400px;
+    position: relative;
+    bottom: 88%;
+    left: 60px;
+}
+#pic1{
+    width: 200px;
+    height: 400px;
+}
+#textcontainer1{
+    position: relative;
+    right: 490px;
+    bottom: 88%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-weight: bold;
+    text-decoration: underline 3px solid black;
+    font-size: 20px;
+    height: 200px;
+}
+#piccontainer2{
+    width: 200px;
+    height: 300px;
+    position: relative;
+    bottom: 93.5%;
+    left: 80%;
+}
+#pic2{
+    width: 200px;
+    height: 300px;
+}
+#piccontainer3{
+    width: 200px;
+    height:200px;
+    position: relative;
+    bottom: 97.5%;
+    left: 4%;
+}
+#pic3{
+    width: 200px;
+    height: 200px;
+}
+#textcontainer2{
+    position: relative;
+    left: 495px;
+    bottom: 94%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-weight: bold;
+    text-decoration: underline 3px solid black;
+    font-size: 20px;
+    height: 200px;
+}
+#textcontainer3{
+    position: relative;
+    right: 38%;
+    bottom: 97.8%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-weight: bold;
+    text-decoration: underline 3px solid black;
+    font-size: 20px;
+    height: 200px;
+}
+#labeldecoration{
+    font-size: 40PX;
+}
+#names{
+    height: 50px;
+    width: 40%;
+    font-size: 30px;
+}
+#labeldecoration2{
+    font-size: 40PX;
+    position: relative;
+    top: 50px;
+}
+#emails{
+    position: relative;
+    height: 50px;
+    width: 40%;
+    font-size: 30px;
+    top: 50px;
+}
+#Subscribers{
+    position: relative;
+    top: 40px;
+    margin-left: -14px;
+    margin-right: auto;
+}
+#PSA{
+    position: relative;
+    top: 120px;
+}
+#signed{
+    position: relative;
+    top: 120px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+#textdeco{
+    font-size: 20px;
+    font-weight: bold;
+}
+#textdeco2{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+#ball {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    position: relative;
+    top: -110px;
+    margin-left: 42.5%;
+    background-color: red;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+}

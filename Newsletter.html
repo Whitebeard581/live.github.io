@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Website - Home Page</title>
+        <link rel="stylesheet" href="css/maincss.css">
+
+        <script
+        src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+        crossorigin="anonymous"></script>
+
+        <script>
+            function changeColor(){
+                  var copyrighted=document.getElementById("copyrightedname");
+                  if (copyrighted.style.color=="white")
+                  copyrighted.style.color="red";
+                  else if (copyrighted.style.color=="red")
+                  copyrighted.style.color="blue";
+                  else if (copyrighted.style.color=="blue")
+                  copyrighted.style.color="yellow";
+                  else if (copyrighted.style.color=="yellow")
+                  copyrighted.style.color="black";
+                  else if (copyrighted.style.color=="black")
+                  copyrighted.style.color="purple";
+                  else 
+                  copyrighted.style.color="white";
+
+            }
+            function stored(){
+                if(document.getElementById('names').value != "" || document.getElementById('emails').value != "")
+            {
+                
+                $.ajax({
+               url:'https://api.apispreadsheets.com/data/qVNti3thvdgfZL6F/',
+               type:'post',
+               data:$("#Subscribers").serializeArray(),
+               success: function(){
+               alert("Congratulations! You are now subscribed.")
+               document.getElementById('names').value = ""
+               document.getElementById('emails').value = ""
+               },
+               error: function(){
+               alert("Sorry. There is an error and you have not been subscribed. Please try again.")
+            }
+            });
+            }
+            else
+            {
+                alert("Sorry. Empty fields. Please enter a value")
+            }   
+            }
+              
+            </script>
+    </head>
+
+    <body>
+        <div class="box-area">
+            <header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <a href="home.html">NeeT00Ran</a>
+                    </div>
+                    <nav>
+                        <a href="Home.html">Home</a>
+                        <a href="About.html">About</a>
+                        <a href="Reviews.html">Reviews</a>
+                        <a href="Gallery.html">Gallery</a>
+                        <a href="Newsletter.html" class="current">Newsletter</a>
+                        <a href="#">Credits</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="banner-area">
+                <h2>Contact Details</h2>
+            </div>
+            <div class="content-area3">
+                <h2 id="textheader">
+                    SUBSCRIBE!
+                </h2>
+                <div class="wrapper">
+                   <div class="subcontent-area_form">
+
+                    <p id="main-title">
+                        Enter details below:
+                    </p>
+
+                   <form id="Subscribers">
+                    <label id="labeldecoration">Name:</label>
+                    <input type="text" id="names" name="names">
+                    <br>
+                    <label id="labeldecoration2">Email:</label>
+                    <input type="email" id="emails" name="emails">
+                   </form>
+
+                   <p id="PSA">Hello All. This is MR NEET00RAN speaking. This is just your friendly PSA announcement from yours truly.
+                    As you have seen, this is where you provide me your contact detail and I notify you everytime I update this site.
+                    Take note that your email and name will not be used for any nefarious purposes nor will it be sold to any advertisers
+                    there is(as frankly, too much legal work to clear there), so worry not. If you <span id="textdeco">Agree</span>, simply click
+                    on the <span id="textdeco2">Big Red Button</span> to proceed to send me your details. Know that this is a legally binding
+                    agreement. However, if you wish to opt out, simply send me an email at <a href="mailto: edwardnewgate307@gmail.com">edwardnewgate307@gmail.com</a>, and I will delete your details.
+                   </p>
+                   <p id="signed">YOU HAVE BEEN LEGALLY WARNED BY MR NEET00RAN. MR NEET00RAN WILL NOT BE LEGALLY RESPONSIBLE FOR HOW YOU DECIDE TO
+                    PROCEED.</p>
+                </div>
+                </div>
+
+                <input type="submit" value="Press Here" onclick="stored()" id="ball"/>
+            </div>
+        </div>
+    </body>
+</html>
