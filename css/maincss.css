@@ -95,6 +95,13 @@ nav a:hover {
     background: lightgray;
     height: 900px;
 }
+.content-area4{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: lightgray;
+    height: 800px;
+}
 .subcontent-area{
     width: 110%;
     margin-left: -60px;
@@ -118,6 +125,14 @@ nav a:hover {
     padding-bottom: 16px;
     background: white;
     height:700px;
+}
+.subcontent-area_thanks{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 16px;
+    background: white;
+    height:800px;
 }
 .content-area h2{
     font-family: Arial;
@@ -146,6 +161,15 @@ nav a:hover {
     font-weight: bold;
     margin: 0;
 }
+.content-area4 h2{
+    font-family: Arial;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
 .content-area p{
     padding: 2%;
     font-family: merienda;
@@ -157,6 +181,11 @@ nav a:hover {
     line-height: 30px;
 }
 .content-area3 p{
+    padding: 2%;
+    font-family: merienda;
+    line-height: 30px;
+}
+.content-area4 p{
     padding: 2%;
     font-family: merienda;
     line-height: 30px;
@@ -217,7 +246,7 @@ nav a:hover {
 }
 .divider2{
     position: relative;
-    bottom: 94.3%;
+    bottom: 94.52%;
     border-top: 3px solid black;
 }
 .divider3{
@@ -245,6 +274,11 @@ nav a:hover {
     top: 56.05%;
     border-top: 3px solid black;
 }
+.divider8{
+    position: relative;
+    top: 36.5%;
+    border-top: 3px solid black;
+}
 #copyrightedname{
     position: relative;
     font-size: 20px;
@@ -261,7 +295,7 @@ nav a:hover {
     background-color: lightslategray;
     position: relative;
     left: 79.5%;
-    bottom: 94.05%;
+    bottom: 94.2%;
     width: 20.3%;
     height: 2.5%;
 }
@@ -304,6 +338,14 @@ nav a:hover {
     top: 56.4%;
     width: 20.3%;
     height: 2.4%;
+}
+.containerdecorations8{
+    background-color: lightslategray;
+    position: relative;
+    left: 79.5%;
+    top: 37%;
+    width: 20.3%;
+    height: 4.5%;
 }
 .idcontainer{
     width: 79%;
@@ -443,9 +485,17 @@ nav a:hover {
     border-radius:50%;
     position: relative;
     top: -110px;
-    margin-left: 42.5%;
+    margin-left: 52.5%;
     background-color: red;
     color: whitesmoke;
     font-size: 15px;
     font-weight: bold;
+}
+#specialthanks{
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 20px;
+}
+#specialthanks li{
+    margin-bottom: 20px;
 }
